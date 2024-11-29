@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".RecycleDetailsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recycle"
+            android:textSize="23sp"
+            android:justificationMode="inter_word"
+            android:id="@+id/recycle_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/publicaplay"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:letterSpacing="0.03"
+            tools:targetApi="o" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:id="@+id/recycle_image"
+            android:src="@drawable/recycle_image"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/subtitle_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="What is reupyog?"
+            android:textColor="@color/black"
+            android:fontFamily="@font/publicaplay"
+            android:textSize="23sp"
+            android:letterSpacing="0.03"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/demo"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/publicaplay"
+            android:letterSpacing="0.03"/>
+
+        <TextView
+            android:id="@+id/subtitle_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="What is reupyog?"
+            android:textColor="@color/black"
+            android:fontFamily="@font/publicaplay"
+            android:textSize="23sp"
+            android:letterSpacing="0.03"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/link_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/link1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="14sp"
+            android:autoLink="web"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/publicaplay"
+            android:letterSpacing="0.03"/>
+
+        <TextView
+            android:id="@+id/link_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/link1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="14sp"
+            android:autoLink="web"
+            android:textColor="@color/blue"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/publicaplay"
+            android:letterSpacing="0.03"/>
+
+        <TextView
+            android:id="@+id/link_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/link1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="14sp"
+            android:autoLink="web"
+            android:textColor="@color/blue"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/publicaplay"
+            android:letterSpacing="0.03"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

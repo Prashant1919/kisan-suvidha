@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.greenlifeuser">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:logo="@drawable/kisansuvidhalogo"
+        android:networkSecurityConfig="@xml/security"
+        android:roundIcon="@drawable/kisansuvidhalogo"
+        android:supportsRtl="true"
+        android:theme="@style/CustomAppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+        <activity
+            android:name=".Dailymarket"
+            android:exported="false" />
+        <activity
+            android:name=".languageselection"
+            android:exported="false" />
+        <activity
+            android:name=".Animalsell"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".organic_productdetails"
+            android:exported="false" />
+        <activity
+            android:name=".uploadimage"
+            android:exported="false" />
+        <activity
+            android:name=".AddPost"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".RecycleDetailsActivity" />
+        <activity android:name=".CropsDetailsActivity" />
+        <activity android:name=".GovernmentSchemeActivity" />
+        <activity android:name=".ReUpyogActivity" />
+        <activity android:name=".CropAnalysisActivity" />
+        <activity android:name=".CropPredictionActivity" />
+        <activity android:name=".SoilHealthActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".ProductDetailsActivity"
+            android:theme="@style/AppThemeDetails" />
+        <activity android:name=".PostDetailsActivity" /> <!-- <activity -->
+        <!-- android:name=".detectionActivities.RoseDetection" -->
+        <!-- android:theme="@style/DetectionTheme" /> -->
+        <!-- <activity -->
+        <!-- android:name=".detectionActivities.TomatoDetection" -->
+        <!-- android:theme="@style/DetectionTheme" /> -->
+        <!-- <activity -->
+        <!-- android:name=".detectionActivities.TeaDetection" -->
+        <!-- android:theme="@style/DetectionTheme" /> -->
+        <!-- <activity -->
+        <!-- android:name=".detectionActivities.RiceDetection" -->
+        <!-- android:theme="@style/DetectionTheme" /> -->
+        <!-- <activity -->
+        <!-- android:name=".detectionActivities.PotatoDetection" -->
+        <!-- android:theme="@style/DetectionTheme" /> -->
+        <activity
+            android:name=".detectionActivities.MangoDetection"
+            android:theme="@style/DetectionTheme" />
+        <activity
+            android:name=".detectionActivities.PapayaDetection"
+            android:theme="@style/DetectionTheme" />
+        <activity
+            android:name=".detectionActivities.GrapeDetection"
+            android:theme="@style/DetectionTheme" /> <!-- <activity -->
+        <!-- android:name=".detectionActivities.CottonDetection" -->
+        <!-- android:theme="@style/DetectionTheme" /> -->
+        <activity
+            android:name=".detectionActivities.CornDetection"
+            android:theme="@style/DetectionTheme" />
+        <activity
+            android:name=".detectionActivities.CitrusDetection"
+            android:theme="@style/DetectionTheme" /> <!-- <activity -->
+        <!-- android:name=".detectionActivities.ChilliDetection" -->
+        <!-- android:theme="@style/DetectionTheme" /> -->
+        <activity
+            android:name=".detectionActivities.BananaDetection"
+            android:theme="@style/DetectionTheme" />
+        <activity
+            android:name=".detectionActivities.AppleDetection"
+            android:theme="@style/DetectionTheme" />
+        <activity
+            android:name=".DetectionActivity"
+            android:theme="@style/RegLogTheme" />
+        <activity
+            android:name=".PestsActivity"
+            android:theme="@style/RegLogTheme" />
+        <activity
+            android:name=".CommunityActvity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProductActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SendPasswordActivity" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:theme="@style/RegLogTheme" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/RegLogTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.greenlifeuser.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
+    </application>
+
+</manifest>

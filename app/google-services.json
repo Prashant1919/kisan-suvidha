@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "476204134272",
+    "project_id": "greenlife-db2f2",
+    "storage_bucket": "greenlife-db2f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476204134272:android:96dc00f4b6173c1e499b65",
+        "android_client_info": {
+          "package_name": "com.example.greenlifeadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476204134272-fna9a2grunq201vruufritifita0aaqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-BY-f5B6A7fmP8WDjR5hZsv6-TuEXpOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476204134272-fna9a2grunq201vruufritifita0aaqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476204134272:android:7eeeedffe7b7d5f7499b65",
+        "android_client_info": {
+          "package_name": "com.example.greenlifeuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476204134272-fna9a2grunq201vruufritifita0aaqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-BY-f5B6A7fmP8WDjR5hZsv6-TuEXpOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476204134272-fna9a2grunq201vruufritifita0aaqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

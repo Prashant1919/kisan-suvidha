@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/blue_gradient_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/crop_image"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:background="@drawable/white_circle_background"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            android:src="@drawable/corn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crop name"
+            android:background="@drawable/white_card_back"
+            android:id="@+id/crop_name"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:fontFamily="@font/publicaplay"
+            android:textSize="17sp"
+            android:letterSpacing="0.04"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

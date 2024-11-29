@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/recycle_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/publicaplay"
+            android:letterSpacing="0.04"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="19sp"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/publicaplay"
+            android:letterSpacing="0.04"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:text="Click the below card"
+            android:textColor="@color/grey_500"
+            android:textAlignment="center" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <ImageView
+                android:id="@+id/recycle_image"
+                android:src="@drawable/recycle_image"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

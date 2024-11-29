@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_card_back"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kishna_smart_large_logo"
+                android:id="@+id/news_image"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loading"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="demo text is here"
+        android:fontFamily="@font/poppins_medium"
+        android:letterSpacing="0.02"
+        android:textSize="21sp"
+        android:layout_below="@id/cardView"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_below="@id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+
+        <View
+            android:id="@+id/view_tt"
+            android:layout_width="2dp"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_source"
+            android:layout_toEndOf="@id/view_tt"
+            android:text="source name"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <View
+            android:id="@+id/view_t"
+            android:layout_width="2dp"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_toEndOf="@id/news_source"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"/>
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/edit_icon"
+            android:id="@+id/edit_btn"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@id/delete_btn"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/delete_btn"
+            android:background="@android:color/transparent"
+            android:src="@drawable/delete_icon"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/news_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:maxLines="2"
+        android:text="Description is goes here"
+        android:layout_below="@id/rel1"/>
+
+    <TextView
+        android:id="@+id/news_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:fontFamily="@font/publicaplay_bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:maxLines="2"
+        android:text="Price of the product"
+        android:layout_below="@id/news_description"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_price"
+        android:id="@+id/news_number"
+        android:text="9999999999"
+        android:fontFamily="@font/publicaplay"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".organic_productdetails">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_icon2"
+            android:layout_margin="16dp"
+            android:id="@+id/og_btn"
+        />
+        <ImageView
+        android:id="@+id/og_imgdetails"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_launcher_background" />
+        <TextView
+            android:id="@+id/og_detailstitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/og_imgdetails"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/publicaplay"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.03"
+            android:text="Title Here"
+            android:textColor="@color/black"
+            android:textSize="27sp" />
+            <TextView
+                android:id="@+id/descript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:textSize="18sp"
+                android:maxLines="10"
+                android:text="Enter description about product"
+                android:layout_below="@+id/og_detailstitle"
+                />
+            <TextView
+                android:id="@+id/og_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_below="@id/descript"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/publicaplay"
+                android:letterSpacing="0.03"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/og_detailscontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:text="contact number"
+                android:layout_below="@+id/og_address"
+                />
+            <Button
+                android:id="@+id/btn_supplier"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_to_suppier"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:lineSpacingExtra="2dp"
+                android:letterSpacing="0.06"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/og_detailscontact"
+                android:background="@drawable/button_login_riple"/>
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

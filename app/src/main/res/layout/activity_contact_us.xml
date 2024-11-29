@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ContactUs">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get in touch with us"
+        android:fontFamily="@font/publicaplay"
+        android:textSize="21sp"
+        android:letterSpacing="0.03"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_name"
+        android:hint="Your name"
+        android:padding="12dp"
+        android:fontFamily="@font/publicaplay"
+        android:letterSpacing="0.03"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/spinner_card_back2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_email"
+        android:hint="Your email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:fontFamily="@font/publicaplay"
+        android:letterSpacing="0.03"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_card_back2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/contact_message"
+        android:hint="Your name"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:inputType="textLongMessage"
+        android:padding="12dp"
+        android:fontFamily="@font/publicaplay"
+        android:letterSpacing="0.03"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_card_back2"/>
+
+    <Button
+        android:id="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login_riple"
+        android:textSize="17sp"
+        android:text="Send Message"
+        android:fontFamily="@font/publicaplay"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:letterSpacing="0.04"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>

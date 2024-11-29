@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".CropPredictionActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/backBtn"
+                android:src="@drawable/back_icon2"
+                android:padding="5dp"
+                android:onClick="back"
+                android:layout_marginStart="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop Prediction"
+                android:fontFamily="@font/publicaplay"
+                android:textSize="19sp"
+                android:letterSpacing="0.02"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/crop_predict1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/publicaplay"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:letterSpacing="0.03"
+                android:background="@color/gblue"
+                android:padding="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nitrogen (kg/acre)"
+                android:textColor="@color/black"
+                android:letterSpacing="0.04"
+                android:textSize="16sp"
+                android:fontFamily="@font/publicaplay_bold"
+                android:layout_marginTop="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/active_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20-60"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:id="@+id/n20_60"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="60-100"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:id="@+id/n60_100"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100-140"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:id="@+id/n100_140"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phosphorus (kg/acre)"
+                android:textColor="@color/black"
+                android:letterSpacing="0.04"
+                android:textSize="16sp"
+                android:fontFamily="@font/publicaplay_bold"
+                android:layout_marginTop="16dp"/>
+
+
+            <RadioGroup
+                android:id="@+id/pulse_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10-30"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:id="@+id/ph10_30"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30-50"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:id="@+id/ph30_50"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50-70"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:id="@+id/ph50_70"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Potassium (kg/acre)"
+                android:textColor="@color/black"
+                android:letterSpacing="0.04"
+                android:textSize="16sp"
+                android:fontFamily="@font/publicaplay_bold"
+                android:layout_marginTop="16dp"/>
+
+
+            <RadioGroup
+                android:id="@+id/grimace_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10-30"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:id="@+id/po10_30"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:text="30-50"
+                    android:id="@+id/po30_50"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/publicaplay"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:text="50-70"
+                    android:id="@+id/po50_70"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature (°C)"
+                android:textColor="@color/black"
+                android:letterSpacing="0.04"
+                android:textSize="16sp"
+                android:fontFamily="@font/publicaplay_bold"
+                android:layout_marginTop="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/appearance_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10-20"
+                    android:fontFamily="@font/publicaplay"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:id="@+id/t10_20"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20-30"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:id="@+id/t20_30"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/publicaplay"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:text="30-40"
+                    android:id="@+id/t30_40"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rainfall (CM)"
+                android:textColor="@color/black"
+                android:letterSpacing="0.04"
+                android:textSize="16sp"
+                android:fontFamily="@font/publicaplay_bold"
+                android:layout_marginTop="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/respiration_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100-175"
+                    android:fontFamily="@font/publicaplay"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:id="@+id/r100_175"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="175-350"
+                    android:fontFamily="@font/publicaplay"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:id="@+id/r175_350"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="350-450"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/publicaplay"
+                    android:id="@+id/r350_450"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/calculate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_login_riple"
+            android:elevation="10dp"
+            android:fontFamily="@font/publicaplay"
+            android:letterSpacing="0.1"
+            android:text="Recommended Crop"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/result_card_back"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:fontFamily="@font/publicaplay_bold"
+                android:textSize="17sp"
+                android:background="@color/gred"
+                android:textColor="@color/white"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/result_TV"
+                android:textSize="19sp"
+                android:textAlignment="center"
+                android:textColor="@color/gred"
+                android:text="Result"
+                android:fontFamily="@font/publicaplay"
+                android:letterSpacing="0.04"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

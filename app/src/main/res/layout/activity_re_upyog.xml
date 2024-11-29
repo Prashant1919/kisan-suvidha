@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ReUpyogActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="6dp"
+            android:layout_gravity="end"
+            android:src="@drawable/back_icon2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oragnic_manure"
+            android:textSize="16sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_bold"/>
+    </LinearLayout>
+
+    <!-- Floating Action Button positioned using CoordinatorLayout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cropsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ogbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#00E676"
+        android:contentDescription="Post"
+        android:tooltipText="Animal Selling"
+        app:fabSize="normal"
+        app:maxImageSize="50dp"
+        app:useCompatPadding="true"
+    android:src="@drawable/addbtn" />
+
+    <LinearLayout
+        android:id="@+id/crops_progree_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/publicaplay"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.04"
+            android:text="Wait for loading images..."
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

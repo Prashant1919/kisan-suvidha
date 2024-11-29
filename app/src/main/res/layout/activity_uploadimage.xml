@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uploadimage">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add your product details"
+        android:fontFamily="@font/publicaplay_bold"
+        android:textSize="17sp"
+        android:letterSpacing="0.02"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/gblue"/>
+
+    <EditText
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product title here.."
+        android:letterSpacing="0.03"
+        android:textColor="@color/gblue"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/publicaplay"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/spinner_card_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:hint="Product Description"
+        android:id="@+id/news_description"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:letterSpacing="0.03"
+        android:textColor="@color/gblue"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:gravity="start"
+        android:ems="20"
+        android:fontFamily="@font/publicaplay"
+        android:background="@drawable/spinner_card_back"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_title" />
+
+    <EditText
+        android:hint="Price, 20/kg, 100/liter, etc."
+        android:id="@+id/news_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.03"
+        android:textColor="@color/gblue"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:gravity="start"
+        android:ems="10"
+        android:fontFamily="@font/publicaplay"
+        android:background="@drawable/spinner_card_back"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_description" />
+
+    <EditText
+        android:hint="Sold by"
+        android:id="@+id/news_source"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.03"
+        android:textColor="@color/gblue"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:gravity="start"
+        android:ems="10"
+        android:fontFamily="@font/publicaplay"
+        android:background="@drawable/spinner_card_back"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_price" />
+
+    <EditText
+        android:hint="Contact Number"
+        android:id="@+id/news_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.03"
+        android:textColor="@color/gblue"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:gravity="start"
+        android:ems="10"
+        android:fontFamily="@font/publicaplay"
+        android:background="@drawable/spinner_card_back"
+        android:inputType="phone"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_source" />
+
+    <ImageView
+        android:id="@+id/news_img"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_number"
+        android:src="@drawable/add_post_image" />
+
+    <ImageView
+        android:id="@+id/popup_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_bg"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_img"
+        android:src="@drawable/ic_round_check_24"
+        app:tint="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/popup_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_bg"
+        android:indeterminateTint="@color/white"
+        android:padding="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/popup_add"
+        app:layout_constraintStart_toStartOf="@+id/popup_add"
+        app:layout_constraintTop_toTopOf="@+id/popup_add" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

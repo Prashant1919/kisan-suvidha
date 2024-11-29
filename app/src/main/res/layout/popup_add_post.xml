@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/popup_user_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="2dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop_up_ser_name"
+        android:text="User name"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/publicaplay"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.03"
+        app:layout_constraintStart_toEndOf="@id/popup_user_image"
+        app:layout_constraintTop_toTopOf="@id/popup_user_image"
+        app:layout_constraintBottom_toBottomOf="@id/popup_user_image"
+        android:layout_marginStart="8dp"/>
+
+    <EditText
+        android:id="@+id/popup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Public post title.."
+        android:fontFamily="@font/publicaplay"
+        android:letterSpacing="0.03"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/publc_post_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popup_user_image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:hint="Description.."
+        android:id="@+id/popup_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/publicaplay"
+        android:letterSpacing="0.03"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:gravity="start"
+        android:background="@drawable/publc_post_edittext"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_title" />
+
+    <ImageView
+        android:id="@+id/popup_img"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_description"
+        android:src="@drawable/add_post_image" />
+
+    <ImageView
+        android:id="@+id/popup_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_bg"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_img"
+        app:srcCompat="@drawable/ic_round_check_24"
+        app:tint="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/popup_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_bg"
+        android:indeterminateTint="@color/white"
+        android:padding="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/popup_add"
+        app:layout_constraintStart_toStartOf="@+id/popup_add"
+        app:layout_constraintTop_toTopOf="@+id/popup_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

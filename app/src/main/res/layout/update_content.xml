@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black_overlay3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update product"
+        android:textSize="21sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:letterSpacing="0.04"/>
+
+    <EditText
+        android:id="@+id/news_update_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/publc_post_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:hint="Product Title"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:letterSpacing="0.03"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <EditText
+        android:id="@+id/news_update_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/publc_post_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:hint="Product Type"
+        android:textColor="@color/black"
+        android:letterSpacing="0.03"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <EditText
+        android:id="@+id/news_update_description"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/publc_post_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        android:hint="Product Description"
+        android:gravity="start"
+        android:ems="20"
+        android:textColor="@color/black"
+        android:letterSpacing="0.03"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_btn"
+        android:text="Update"
+        android:textSize="17sp"
+        android:fontFamily="@font/poppins_medium"
+        android:letterSpacing="0.06"
+        android:textAllCaps="false"
+        android:background="@drawable/button_login_riple"
+        android:textColor="@color/white"
+        android:layout_margin="16dp" />
+
+</LinearLayout>

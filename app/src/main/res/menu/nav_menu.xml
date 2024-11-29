@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home_data" />
+
+        <item
+            android:id="@+id/nav_soil_card"
+            android:icon="@drawable/health_card"
+            android:title="@string/soil_testing_laboratory" />
+
+        <item
+            android:id="@+id/nav_crop_prediction"
+            android:icon="@drawable/prediction"
+            android:title="@string/crop_prediction" />
+
+        <item
+            android:id="@+id/nav_crop_analysis"
+            android:icon="@drawable/data_analysis"
+            android:title="@string/sell_product" />
+
+        <item
+            android:id="@+id/nav_crop_disease"
+            android:icon="@drawable/gps"
+            android:title="@string/disease_detection" />
+
+        <item
+            android:id="@+id/nav_reupyog"
+            android:icon="@drawable/recycle"
+            android:title="@string/organic_manure" />
+
+        <item
+            android:id="@+id/nav_govt_scheme"
+            android:icon="@drawable/schemes"
+            android:title="@string/government_schemes" />
+
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/food"
+            android:title="@string/farming_products" />
+        <item
+            android:id="@+id/nav_expert"
+            android:icon="@drawable/expert"
+            android:title="@string/expert_advice" />
+        <item
+            android:id="@+id/nav_machinery"
+            android:icon="@drawable/tractor"
+            android:title="@string/daily_market_price" />
+        <item
+            android:id="@+id/nav_livestock"
+            android:icon="@drawable/livestock"
+            android:title="@string/animals" />
+
+        />
+    </group>
+
+    <group android:id="@+id/group2">
+
+        <item android:id="@+id/nav_contactUs"
+            android:title="@string/contact_us"
+            android:icon="@drawable/contact_us"/>
+
+        <item android:id="@+id/nav_logout"
+            android:title="@string/logout"
+            android:icon="@drawable/signout"/>
+    </group>
+
+</menu>
